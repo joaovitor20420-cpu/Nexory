@@ -120,17 +120,25 @@ button {
   border-radius: 9999px;
   font-weight: 700;
   transition: all 0.3s ease;
+  position: relative;
+}
+
+.magnetic {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.magnetic-text {
+  display: inline-block;
+  pointer-events: none;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
 }
 
 .btn-primary {
   background-color: var(--color-primary-container);
   color: var(--color-on-primary-container);
   box-shadow: 0 0 20px rgba(123, 46, 255, 0.4), 0 0 40px rgba(123, 46, 255, 0.2);
-}
-
-.btn-primary:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 30px rgba(123, 46, 255, 0.6), 0 0 60px rgba(123, 46, 255, 0.3);
 }
 
 .btn-primary:active {
@@ -347,6 +355,35 @@ button {
 .bento-item {
   padding: 2.5rem;
   transition: all 0.3s ease;
+}
+
+.glow-card {
+  position: relative;
+}
+
+.glow-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    800px circle at var(--mouse-x, 0) var(--mouse-y, 0),
+    rgba(209, 188, 255, 0.15),
+    transparent 40%
+  );
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.glow-card:hover::before {
+  opacity: 1;
+}
+
+.bento-item-content {
+  position: relative;
+  z-index: 10;
 }
 
 .icon-box {
