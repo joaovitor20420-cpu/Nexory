@@ -749,10 +749,18 @@ button {
   margin-bottom: 4rem;
 }
 
+.section-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 1rem;
+  display: block;
+}
+
 .section-title-center h2 {
   font-size: 2.25rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  letter-spacing: -0.03em;
 }
 
 @media (min-width: 768px) {
@@ -761,6 +769,10 @@ button {
 
 .section-subtitle {
   color: rgba(204, 195, 217, 0.6);
+  font-size: 1.1rem;
+  max-width: 36rem;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 .scroller-container {
@@ -768,15 +780,15 @@ button {
   position: relative;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   margin-bottom: 1rem;
-  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 .scroller-track {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   width: max-content;
   will-change: transform;
 }
@@ -787,7 +799,7 @@ button {
 
 .scroller-inner {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .scroller-track.left {
@@ -800,38 +812,104 @@ button {
 
 @keyframes scroll-left {
   from { transform: translateX(0); }
-  to { transform: translateX(calc(-50% - 1rem)); }
+  to { transform: translateX(calc(-50% - 0.75rem)); }
 }
 
 @keyframes scroll-right {
-  from { transform: translateX(calc(-50% - 1rem)); }
+  from { transform: translateX(calc(-50% - 0.75rem)); }
   to { transform: translateX(0); }
 }
 
 .scroller-track .step-card,
 .scroller-track .service-card {
-  width: 400px;
+  width: 380px;
   flex-shrink: 0;
   white-space: normal;
 }
 
+/* Step Cards */
 .step-card {
-  padding: 2.5rem;
+  padding: 2.5rem 2.5rem 2rem;
   position: relative;
   overflow: hidden;
   height: 100%;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(74, 68, 86, 0.15);
 }
+
+.step-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.step-card:hover::after {
+  width: 100%;
+}
+
+.step-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(74, 68, 86, 0.3);
+}
+
+/* Step card bottom border colors */
+.step-card:nth-child(1)::after,
+.step-card:nth-child(4)::after { background: linear-gradient(90deg, var(--color-primary), rgba(209, 188, 255, 0.3)); }
+.step-card:nth-child(2)::after { background: linear-gradient(90deg, var(--color-secondary), rgba(255, 176, 205, 0.3)); }
+.step-card:nth-child(3)::after { background: linear-gradient(90deg, var(--color-tertiary), rgba(40, 216, 252, 0.3)); }
 
 .step-number {
   position: absolute;
-  top: 1rem; right: 1rem;
-  font-size: 2.25rem;
+  top: 1rem; right: 1.25rem;
+  font-size: 3.5rem;
   font-weight: 900;
+  line-height: 1;
 }
 
-.num-primary { color: rgba(209, 188, 255, 0.1); }
-.num-secondary { color: rgba(255, 176, 205, 0.1); }
-.num-tertiary { color: rgba(40, 216, 252, 0.1); }
+.num-primary { color: rgba(209, 188, 255, 0.08); }
+.num-secondary { color: rgba(255, 176, 205, 0.08); }
+.num-tertiary { color: rgba(40, 216, 252, 0.08); }
+
+/* Step card icon */
+.step-card .step-icon-box {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  transition: all 0.4s ease;
+}
+
+.step-card:hover .step-icon-box {
+  transform: scale(1.1);
+}
+
+.step-icon-primary { background: rgba(209, 188, 255, 0.1); border: 1px solid rgba(209, 188, 255, 0.15); }
+.step-icon-secondary { background: rgba(255, 176, 205, 0.1); border: 1px solid rgba(255, 176, 205, 0.15); }
+.step-icon-tertiary { background: rgba(40, 216, 252, 0.1); border: 1px solid rgba(40, 216, 252, 0.15); }
+
+.step-card:hover .step-icon-primary { box-shadow: 0 0 16px rgba(123, 46, 255, 0.25); }
+.step-card:hover .step-icon-secondary { box-shadow: 0 0 16px rgba(224, 0, 136, 0.25); }
+.step-card:hover .step-icon-tertiary { box-shadow: 0 0 16px rgba(40, 216, 252, 0.25); }
+
+.step-card h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.step-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgba(204, 195, 217, 0.6);
+}
 
 /* Services Base Properties */
 .bg-surface-container { background-color: var(--color-surface-container); }
@@ -841,8 +919,8 @@ button {
   padding: 2.5rem;
   border-radius: 1.5rem;
   background-color: var(--color-surface-container);
-  border: 1px solid rgba(74, 68, 86, 0.1);
-  transition: all 0.5s ease;
+  border: 1px solid rgba(74, 68, 86, 0.15);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   overflow: hidden;
   height: 100%;
 }
@@ -852,28 +930,88 @@ button {
   inset: 0;
   background: linear-gradient(to bottom right, rgba(209, 188, 255, 0.1), transparent);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.4s ease;
 }
 
 .service-card:hover .card-bg-glow { opacity: 1; }
 
-.service-card:hover { transform: translateY(-5px); }
-.service-card.hover-primary:hover { border-color: rgba(209, 188, 255, 0.5); }
-.service-card.hover-secondary:hover { border-color: rgba(255, 176, 205, 0.5); }
-.service-card.hover-tertiary:hover { border-color: rgba(40, 216, 252, 0.5); }
-
-.service-line {
-  height: 4px;
-  width: 2.5rem;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s ease;
+.service-card:hover {
+  transform: translateY(-6px);
 }
 
-.service-card:hover .service-line { transform: scaleX(1); }
-.bg-primary-line { background-color: var(--color-primary); }
-.bg-secondary-line { background-color: var(--color-secondary); }
-.bg-tertiary-line { background-color: var(--color-tertiary); }
+.service-card.hover-primary:hover {
+  border-color: rgba(209, 188, 255, 0.5);
+  box-shadow: 0 8px 35px rgba(123, 46, 255, 0.12), 0 0 50px rgba(123, 46, 255, 0.06);
+}
+.service-card.hover-secondary:hover {
+  border-color: rgba(255, 176, 205, 0.5);
+  box-shadow: 0 8px 35px rgba(224, 0, 136, 0.12), 0 0 50px rgba(224, 0, 136, 0.06);
+}
+.service-card.hover-tertiary:hover {
+  border-color: rgba(40, 216, 252, 0.5);
+  box-shadow: 0 8px 35px rgba(40, 216, 252, 0.12), 0 0 50px rgba(40, 216, 252, 0.06);
+}
+
+/* Service card icon box */
+.service-card .svc-icon-box {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  transition: all 0.4s ease;
+}
+
+.service-card:hover .svc-icon-box {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.svc-icon-primary { background: rgba(209, 188, 255, 0.1); border: 1px solid rgba(209, 188, 255, 0.15); }
+.svc-icon-secondary { background: rgba(255, 176, 205, 0.1); border: 1px solid rgba(255, 176, 205, 0.15); }
+.svc-icon-tertiary { background: rgba(40, 216, 252, 0.1); border: 1px solid rgba(40, 216, 252, 0.15); }
+
+.service-card:hover .svc-icon-primary { box-shadow: 0 0 20px rgba(123, 46, 255, 0.3); }
+.service-card:hover .svc-icon-secondary { box-shadow: 0 0 20px rgba(224, 0, 136, 0.3); }
+.service-card:hover .svc-icon-tertiary { box-shadow: 0 0 20px rgba(40, 216, 252, 0.3); }
+
+.service-card h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgba(204, 195, 217, 0.6);
+  margin-bottom: 1.5rem;
+}
+
+.service-line {
+  height: 3px;
+  width: 2.5rem;
+  border-radius: 3px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-card:hover .service-line {
+  transform: scaleX(1);
+  width: 4rem;
+}
+
+.bg-primary-line { background: linear-gradient(90deg, var(--color-primary), rgba(209, 188, 255, 0.3)); }
+.bg-secondary-line { background: linear-gradient(90deg, var(--color-secondary), rgba(255, 176, 205, 0.3)); }
+.bg-tertiary-line { background: linear-gradient(90deg, var(--color-tertiary), rgba(40, 216, 252, 0.3)); }
+
+.service-content {
+  position: relative;
+  z-index: 10;
+}
 
 .center-flex {
   display: flex;
