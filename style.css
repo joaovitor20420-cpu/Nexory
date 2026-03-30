@@ -524,7 +524,7 @@ button {
 
 .italic { font-style: italic; }
 
-/* How it Works */
+/* How it Works / Services Infinite Scrollers */
 .section-title-center {
   text-align: center;
   margin-bottom: 4rem;
@@ -544,19 +544,63 @@ button {
   color: rgba(204, 195, 217, 0.6);
 }
 
-.steps-grid {
-  display: grid;
+.scroller-container {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.scroller-track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  will-change: transform;
+}
+
+.scroller-track:hover {
+  animation-play-state: paused !important;
+}
+
+.scroller-inner {
+  display: flex;
   gap: 2rem;
 }
 
-@media (min-width: 768px) {
-  .steps-grid { grid-template-columns: repeat(4, 1fr); }
+.scroller-track.left {
+  animation: scroll-left 50s linear infinite;
+}
+
+.scroller-track.right {
+  animation: scroll-right 50s linear infinite;
+}
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - 1rem)); }
+}
+
+@keyframes scroll-right {
+  from { transform: translateX(calc(-50% - 1rem)); }
+  to { transform: translateX(0); }
+}
+
+.scroller-track .step-card,
+.scroller-track .service-card {
+  width: 400px;
+  flex-shrink: 0;
+  white-space: normal;
 }
 
 .step-card {
-  padding: 2rem;
+  padding: 2.5rem;
   position: relative;
   overflow: hidden;
+  height: 100%;
 }
 
 .step-number {
@@ -570,26 +614,18 @@ button {
 .num-secondary { color: rgba(255, 176, 205, 0.1); }
 .num-tertiary { color: rgba(40, 216, 252, 0.1); }
 
-/* Services */
+/* Services Base Properties */
 .bg-surface-container { background-color: var(--color-surface-container); }
-
-.services-grid {
-  display: grid;
-  gap: 2rem;
-  margin-bottom: 4rem;
-}
-
-@media (min-width: 768px) { .services-grid { grid-template-columns: 1fr 1fr; } }
-@media (min-width: 1024px) { .services-grid { grid-template-columns: repeat(4, 1fr); } }
 
 .service-card {
   position: relative;
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 1.5rem;
   background-color: var(--color-surface-container);
   border: 1px solid rgba(74, 68, 86, 0.1);
   transition: all 0.5s ease;
   overflow: hidden;
+  height: 100%;
 }
 
 .card-bg-glow {
