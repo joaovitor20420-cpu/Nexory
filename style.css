@@ -1134,36 +1134,103 @@ button {
   line-height: 1.5;
 }
 
-/* Social Proof */
-.social-proof {
+/* Tech Stack */
+.tech-stack {
   padding: 5rem 0;
   border-top: 1px solid rgba(74, 68, 86, 0.1);
   border-bottom: 1px solid rgba(74, 68, 86, 0.1);
   background-color: var(--color-background);
+  overflow: hidden;
 }
 
-.brands-container {
+.tech-stack-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  opacity: 0.5;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(204, 195, 217, 0.6);
+}
+
+.tech-scroller {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.tech-track {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  gap: 1.5rem;
+  width: max-content;
+  will-change: transform;
+  animation: tech-scroll 35s linear infinite;
+}
+
+.tech-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes tech-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - 0.75rem)); }
+}
+
+.tech-track-inner {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 3rem;
-  opacity: 0.3;
-  filter: grayscale(100%);
-  transition: all 0.7s ease;
+  gap: 0.75rem;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  background: rgba(53, 53, 52, 0.3);
+  border: 1px solid rgba(74, 68, 86, 0.12);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  color: inherit;
+  min-width: 120px;
+  flex-shrink: 0;
+  cursor: pointer;
 }
 
-@media (min-width: 768px) { .brands-container { gap: 6rem; } }
-
-.brands-container:hover {
-  opacity: 1;
-  filter: grayscale(0%);
+.tech-item:hover {
+  transform: translateY(-6px);
+  border-color: rgba(209, 188, 255, 0.35);
+  box-shadow: 0 8px 30px rgba(123, 46, 255, 0.1);
+  background: rgba(53, 53, 52, 0.5);
 }
 
-.brand {
-  font-size: 1.875rem;
-  font-weight: 900;
-  letter-spacing: -0.05em;
+.tech-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: grayscale(60%) brightness(0.9);
+  transition: all 0.4s ease;
+}
+
+.tech-item:hover img {
+  filter: grayscale(0%) brightness(1);
+  transform: scale(1.15);
+}
+
+.tech-item span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(204, 195, 217, 0.5);
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.tech-item:hover span {
+  color: rgba(204, 195, 217, 0.9);
 }
 
 /* Offer */
