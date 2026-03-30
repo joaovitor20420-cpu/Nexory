@@ -22,16 +22,13 @@
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
     
-    <filter id="dash-dropshadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="0" stdDeviation="35" flood-color="#7B2EFF" flood-opacity="0.85"/>
-    </filter>
   </defs>
 
   <!-- Ambient Glow -->
   <circle cx="400" cy="250" r="300" fill="url(#dash-halo)" />
 
   <!-- Main Application Window -->
-  <g filter="url(#dash-dropshadow)">
+  <g>
     <!-- Window Body -->
     <rect x="50" y="50" width="700" height="400" rx="20" fill="url(#panel-bg)" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
     
@@ -80,14 +77,14 @@
   </g>
   
   <!-- Floating Dashboard Widgets mapping to "Processos Manuais", "Sistemas", "Integrações" -->
-  <g filter="url(#dash-dropshadow)">
+  <g>
     <!-- Small floating card for "Performance Uptime" -->
     <rect x="620" y="270" width="160" height="100" rx="15" fill="rgba(40, 216, 252, 0.15)" stroke="#28D8FC" stroke-width="2" />
     <path d="M 640 330 L 660 330 L 680 300 L 700 340 L 720 290 L 750 290" fill="none" stroke="#28D8FC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#dash-glow)"/>
     <circle cx="750" cy="290" r="5" fill="#FFF" filter="url(#dash-glow)"/>
   </g>
 
-  <g filter="url(#dash-dropshadow)">
+  <g>
     <!-- Small floating card for "Segurança/Automation" (Gears/Core) -->
     <rect x="-10" y="150" width="140" height="120" rx="15" fill="rgba(123, 46, 255, 0.2)" stroke="#7B2EFF" stroke-width="2" />
     <circle cx="60" cy="210" r="30" fill="none" stroke="#7B2EFF" stroke-width="6" stroke-dasharray="15 15" filter="url(#dash-glow)"/>

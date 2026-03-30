@@ -16,12 +16,15 @@
 
   <!-- Top Navigation -->
   <nav class="navbar reveal">
-    <div class="container navbar-container">
-      <div class="logo font-headline">NEXORY</div>
+    <div class="nav-container">
+      <a href="#" class="logo font-headline" style="display: flex; align-items: center; gap: 0.5rem; transition: none;">
+        <img src="nexory-logo.svg" alt="Nexory Logo" style="height: 30px; width: auto;" />
+        <span>EXORY</span>
+      </a>
       <div class="nav-links">
-        <a class="nav-link active" href="#">Services</a>
-        <a class="nav-link" href="#">Portfolio</a>
-        <a class="nav-link" href="#">Process</a>
+        <a class="nav-link" href="#solucoes">Soluções</a>
+        <a class="nav-link" href="#especialidades">Especialidades</a>
+        <a class="nav-link" href="#como-funciona">Como Funciona</a>
       </div>
       <button onclick="window.open('https://wa.me/5531992692459?text=Olá, vim pelo site e quero agendar meu diagnóstico gratuito da Nexory!', '_blank')" class="btn btn-primary magnetic"><span class="magnetic-text">Falar pelo WhatsApp</span></button>
     </div>
@@ -62,7 +65,7 @@
   </section>
 
   <!-- Value Proposition (Bento Grid) -->
-  <section class="section-padding">
+  <section class="section-padding" id="beneficios">
     <div class="container reveal">
       <div class="bento-grid">
         
@@ -119,7 +122,7 @@
   </section>
 
   <!-- Pain + Solution -->
-  <section class="section-padding bg-low relative" style="overflow: hidden;">
+  <section class="section-padding bg-low relative" style="overflow: hidden;" id="solucoes">
     <div class="container pain-solution-grid">
       <div class="image-glow-wrapper reveal">
         <div class="image-glow"></div>
@@ -159,7 +162,7 @@
   </section>
 
   <!-- How it Works Section -->
-  <section class="section-padding">
+  <section class="section-padding" id="como-funciona">
     <div class="container overflow-visible">
       <div class="section-title-center reveal">
         <h2 class="font-headline">Como funciona</h2>
@@ -228,7 +231,7 @@
   </section>
 
   <!-- Services -->
-  <section class="section-padding">
+  <section class="section-padding" id="especialidades">
     <div class="container overflow-visible">
       <div class="section-title-center reveal">
         <h2 class="font-headline">Nossas Especialidades</h2>
