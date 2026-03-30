@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Halo -->
+    <radialGradient id="halo-core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(40, 216, 252, 0.25)" />
+      <stop offset="100%" stop-color="rgba(0,0,0,0)" />
+    </radialGradient>
+    
+    <!-- Gradients -->
+    <linearGradient id="grad-top" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#28D8FC" />
+      <stop offset="100%" stop-color="#7B2EFF" />
+    </linearGradient>
+    
+    <linearGradient id="grad-left" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7B2EFF" />
+      <stop offset="100%" stop-color="#FFB0CD" />
+    </linearGradient>
+
+    <linearGradient id="grad-right" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(123, 46, 255, 0.8)" />
+      <stop offset="100%" stop-color="rgba(40, 216, 252, 0.6)" />
+    </linearGradient>
+    
+    <!-- Shadows & glow for layers -->
+    <filter id="core-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="30" stdDeviation="20" flood-color="#000" flood-opacity="0.95"/>
+    </filter>
+    <filter id="core-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="300" cy="300" r="280" fill="url(#halo-core)" />
+
+  <!-- Data Flow Lines / Orbits -->
+  <g opacity="0.6">
+    <ellipse cx="300" cy="300" rx="220" ry="100" fill="none" stroke="#28D8FC" stroke-width="2" stroke-dasharray="8 20" transform="rotate(30 300 300)" />
+    <ellipse cx="300" cy="300" rx="260" ry="110" fill="none" stroke="#FFB0CD" stroke-width="1.5" stroke-dasharray="15 35" transform="rotate(-30 300 300)" />
+    <path d="M 100 100 L 500 500" stroke="#7B2EFF" stroke-width="2" stroke-dasharray="20 40" opacity="0.4"/>
+    <path d="M 500 100 L 100 500" stroke="#28D8FC" stroke-width="2" stroke-dasharray="15 30" opacity="0.4"/>
+  </g>
+
+  <!-- Isometric Tech Core (Stacked Layers) -->
+  <g transform="translate(300, 250) scale(1.6)" filter="url(#core-shadow)">
+    
+    <!-- Bottom Layer (Platform) -->
+    <g transform="translate(0, 80)">
+      <polygon points="0,-40 70,-10 0,20 -70,-10" fill="rgba(123, 46, 255, 0.15)" stroke="#7B2EFF" stroke-width="1"/>
+      <polygon points="-70,-10 0,20 0,40 -70,10" fill="rgba(123, 46, 255, 0.4)"/>
+      <polygon points="0,20 70,-10 70,10 0,40" fill="rgba(40, 216, 252, 0.25)"/>
+    </g>
+
+    <!-- Middle Layer (Data Base) -->
+    <g transform="translate(0, 25)">
+      <polygon points="0,-40 60,-10 0,20 -60,-10" fill="rgba(40, 216, 252, 0.25)" stroke="#28D8FC" stroke-width="1.5"/>
+      <polygon points="-60,-10 0,20 0,50 -60,20" fill="url(#grad-left)"/>
+      <polygon points="0,20 60,-10 60,20 0,50" fill="url(#grad-right)"/>
+    </g>
+
+    <!-- Top Layer (Core Processing Unit) -->
+    <g transform="translate(0, -60)" filter="url(#core-glow)">
+      <!-- Top Face -->
+      <polygon points="0,-45 55,-15 0,15 -55,-15" fill="url(#grad-top)"/>
+      <!-- Left Face -->
+      <polygon points="-55,-15 0,15 0,65 -55,35" fill="url(#grad-left)"/>
+      <!-- Right Face -->
+      <polygon points="0,15 55,-15 55,35 0,65" fill="url(#grad-right)"/>
+      
+      <!-- Center Bright Core Energy -->
+      <circle cx="0" cy="5" r="12" fill="#FFF" filter="url(#core-glow)" opacity="0.9"/>
+      <polygon points="0,-12 18,3 0,22 -18,3" fill="#28D8FC" opacity="0.9"/>
+    </g>
+  </g>
+  
+  <!-- Floating Elements around Core -->
+  <circle cx="180" cy="150" r="10" fill="#FFB0CD" filter="url(#core-glow)"/>
+  <circle cx="450" cy="420" r="8" fill="#28D8FC" filter="url(#core-glow)"/>
+  <circle cx="420" cy="120" r="14" fill="#7B2EFF" filter="url(#core-glow)"/>
+</svg>
