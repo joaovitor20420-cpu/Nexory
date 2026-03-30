@@ -7,10 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const revealPoint = 150; 
 
         revealElements.forEach(element => {
-            const elementTop = element.getBoundingClientRect().top;
-
-            if (elementTop < windowHeight - revealPoint) {
+            const rect = element.getBoundingClientRect();
+            
+            if (rect.top < windowHeight - revealPoint && rect.bottom > 0) {
                 element.classList.add('active');
+            } else {
+                element.classList.remove('active');
             }
         });
     };
