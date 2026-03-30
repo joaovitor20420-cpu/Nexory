@@ -1,0 +1,23 @@
+/*
+ * NEXORY - ESTILOS MOBILE EXCLUSIVOS
+ * -----------------------------------
+ * O arquivo index.html foi configurado para carregar este arquivo
+ * APENAS em telas com largura máxima de 768px (smartphones).
+ * Tudo que você digitar aqui não vai quebrar/alterar o design no PC.
+ * Não é mais necessário abrir blocos de @media() aqui dentro!
+ */
+
+/* ================================== */
+/* Insira seus ajustes mobile abaixo  */
+/* ================================== */
+
+.hero-title {
+  /* Exemplo: reduzir o titulo apenas no mobile */
+  font-size: 2.5rem;
+}
+
+.scroller-track .step-card,
+.scroller-track .service-card {
+  /* Exemplo: diminuir largura dos cards nos carrosseis pro dedo rolar melhor */
+  width: 300px;
+}

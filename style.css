@@ -167,7 +167,7 @@ button {
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
   border-bottom: 2px solid rgba(123, 46, 255, 0.2);
-  padding: 1.5rem 2rem;
+  padding: 1rem;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
