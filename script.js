@@ -15,9 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 
-    revealOnScroll();
-
-    // Navbar Scroll Effect
+    // Scroll Event Batching
     window.addEventListener('scroll', () => {
         revealOnScroll();
     });
