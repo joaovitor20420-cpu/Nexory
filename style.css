@@ -340,7 +340,7 @@ button {
 
 /* Value Props */
 .section-padding {
-  padding: 6rem 0;
+  padding: 4.5rem 0;
 }
 
 .bento-grid {
@@ -549,8 +549,8 @@ button {
   position: relative;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-  padding: 2rem 0;
-  margin-bottom: 3rem;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
   mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
 }
