@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const revealOnScroll = () => {
         const windowHeight = window.innerHeight;
-        const revealPoint = 150; 
+        const revealPoint = 50; 
 
         revealElements.forEach(element => {
             const rect = element.getBoundingClientRect();
