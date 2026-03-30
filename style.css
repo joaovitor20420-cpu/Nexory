@@ -1019,21 +1019,47 @@ button {
 }
 
 /* Differential */
+.dif-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.dif-section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(123, 46, 255, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
 .dif-title {
   font-size: 2.25rem;
   text-align: center;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
 }
 
 @media (min-width: 768px) {
   .dif-title { font-size: 3rem; }
 }
 
+.dif-subtitle {
+  text-align: center;
+  color: rgba(204, 195, 217, 0.5);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
 .stats-grid {
   display: grid;
-  gap: 3rem;
-  margin-top: 4rem;
+  gap: 1.5rem;
+  margin-top: 3.5rem;
   text-align: center;
 }
 
@@ -1041,9 +1067,71 @@ button {
   .stats-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
+.stat-item {
+  padding: 2.5rem 2rem;
+  border-radius: 1.5rem;
+  background: rgba(53, 53, 52, 0.3);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(74, 68, 86, 0.15);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(209, 188, 255, 0.5), transparent);
+  transition: none;
+}
+
+.stat-item:hover::before {
+  animation: shimmer-line 1.2s ease forwards;
+}
+
+.stat-item:hover {
+  transform: translateY(-6px);
+  border-color: rgba(74, 68, 86, 0.3);
+}
+
+.stat-item:nth-child(1):hover {
+  box-shadow: 0 8px 40px rgba(40, 216, 252, 0.12), 0 0 50px rgba(40, 216, 252, 0.06);
+  border-color: rgba(40, 216, 252, 0.3);
+}
+
+.stat-item:nth-child(2):hover {
+  box-shadow: 0 8px 40px rgba(224, 0, 136, 0.12), 0 0 50px rgba(224, 0, 136, 0.06);
+  border-color: rgba(255, 176, 205, 0.3);
+}
+
+.stat-item:nth-child(3):hover {
+  box-shadow: 0 8px 40px rgba(123, 46, 255, 0.12), 0 0 50px rgba(123, 46, 255, 0.06);
+  border-color: rgba(209, 188, 255, 0.3);
+}
+
 .stat-num {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 900;
+  letter-spacing: -0.04em;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.stat-item p {
+  color: rgba(204, 195, 217, 0.5);
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 /* Social Proof */
