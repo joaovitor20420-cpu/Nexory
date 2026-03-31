@@ -21,6 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener('scroll', () => {
         revealOnScroll();
     });
+    
+    // Trigger on initial page load
+    revealOnScroll();
 
     // Custom Cursor
     const cursor = document.getElementById('cursor');

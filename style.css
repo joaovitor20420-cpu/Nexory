@@ -141,6 +141,11 @@ button {
   box-shadow: 0 0 20px rgba(123, 46, 255, 0.4), 0 0 40px rgba(123, 46, 255, 0.2);
 }
 
+.hero-cta-btn {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
 .btn-primary:active {
   transform: scale(0.95);
 }
@@ -193,12 +198,32 @@ button {
   transition: all 0.3s ease;
 }
 
-.logo:hover {
+.flex-logo {
+  display: flex !important; /* Force flex since text-fill-color might conflict with inner elements */
+  align-items: center;
+  gap: 0.5rem;
+  transition: none !important;
+}
+
+.flex-logo span {
+  background: linear-gradient(to right, #FFF, #CCC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.flex-logo:hover span {
   background: linear-gradient(to right, var(--color-tertiary), var(--color-primary));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 8px rgba(40, 216, 252, 0.5));
+}
+
+.logo-img {
+  height: 30px;
+  width: auto;
+
 }
 
 .nav-links {
@@ -1511,4 +1536,16 @@ button {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Accessibility: Prefers Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

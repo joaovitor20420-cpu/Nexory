@@ -1,15 +1,26 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR" class="dark">
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>NEXORY | Digital Cockpits & Software Development</title>
   
+  <!-- SEO & Meta Tags -->
+  <meta name="description" content="NEXORY: Desenvolvedora de software e aplicações web de alta performance. Entregamos soluções escaláveis, design premium e performance técnica para alavancar seu negócio." />
+  <meta property="og:title" content="NEXORY | Digital Cockpits & Software Development" />
+  <meta property="og:description" content="NEXORY: Desenvolvedora de software de alta performance. Entregamos soluções escaláveis." />
+  <meta property="og:type" content="website" />
+  <!-- A placeholder og:image, you can replace with absolute URL later -->
+  <meta property="og:image" content="images/og-image.png" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+  
   <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
   
-  <!-- External CSS and JS -->
+  <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="digital-grid">
@@ -17,8 +28,8 @@
   <!-- Top Navigation -->
   <nav class="navbar reveal">
     <div class="nav-container">
-      <a href="#" class="logo font-headline" style="display: flex; align-items: center; gap: 0.5rem; transition: none;">
-        <img src="images/nexory-logo.svg" alt="Nexory Logo" style="height: 30px; width: auto;" />
+      <a href="#" class="logo font-headline flex-logo" aria-label="Voltar para a home">
+        <img src="images/nexory-logo.svg" alt="Nexory Logo" class="logo-img" />
         <span>EXORY</span>
       </a>
       <div class="nav-links">
@@ -26,7 +37,7 @@
         <a class="nav-link" href="#especialidades">Especialidades</a>
         <a class="nav-link" href="#como-funciona">Como Funciona</a>
       </div>
-      <button onclick="window.open('https://wa.me/5531992692459?text=Olá, vim pelo site e quero agendar meu diagnóstico gratuito da Nexory!', '_blank')" class="btn btn-primary magnetic"><span class="magnetic-text">Falar pelo WhatsApp</span></button>
+      <button onclick="window.open('https://wa.me/5531992692459?text=Olá, vim pelo site e quero agendar meu diagnóstico gratuito da Nexory!', '_blank')" class="btn btn-primary magnetic" aria-label="Falar pelo WhatsApp"><span class="magnetic-text">Falar pelo WhatsApp</span></button>
     </div>
   </nav>
 
@@ -46,7 +57,9 @@
           Desenvolvimento sob medida, rápido, escalável e pensado para crescimento real. Não apenas codificamos; arquitetamos o seu sucesso.
         </p>
         <div class="hero-actions">
-          <button onclick="window.open('https://wa.me/5531992692459?text=Olá, quero agendar meu diagnóstico gratuito para alavancar meus projetos com a Nexory!', '_blank')" class="btn btn-primary magnetic" style="padding: 1rem 2rem; font-size: 1.125rem;"><span class="magnetic-text">Agendar diagnóstico gratuito</span></button>
+          <button onclick="window.open('https://wa.me/5531992692459?text=Olá, quero agendar meu diagnóstico gratuito para alavancar meus projetos com a Nexory!', '_blank')" class="btn btn-primary magnetic hero-cta-btn" aria-label="Agendar diagnóstico gratuito">
+            <span class="magnetic-text">Agendar diagnóstico gratuito</span>
+          </button>
           <div class="alert-badge">
             ⚠️ Apenas 3 vagas abertas essa semana
           </div>
@@ -403,85 +416,85 @@
         <div class="tech-track">
           <div class="tech-track-inner">
             <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener" class="tech-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" />
               <span>HTML5</span>
             </a>
             <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" rel="noopener" class="tech-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" />
               <span>CSS3</span>
             </a>
             <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank" rel="noopener" class="tech-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
               <span>JavaScript</span>
             </a>
             <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener" class="tech-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" />
               <span>TypeScript</span>
             </a>
             <a href="https://react.dev/" target="_blank" rel="noopener" class="tech-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
               <span>React</span>
             </a>
             <a href="https://nextjs.org/" target="_blank" rel="noopener" class="tech-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" style="filter: invert(1) grayscale(60%) brightness(0.9);" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" style="filter: invert(1) grayscale(60%) brightness(0.9);" />
               <span>Next.js</span>
             </a>
             <a href="https://nodejs.org/" target="_blank" rel="noopener" class="tech-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" />
               <span>Node.js</span>
             </a>
             <a href="https://tailwindcss.com/" target="_blank" rel="noopener" class="tech-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" />
               <span>Tailwind</span>
             </a>
             <a href="https://git-scm.com/" target="_blank" rel="noopener" class="tech-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" />
               <span>Git</span>
             </a>
             <a href="https://github.com/" target="_blank" rel="noopener" class="tech-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" style="filter: invert(1) grayscale(60%) brightness(0.9);" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" style="filter: invert(1) grayscale(60%) brightness(0.9);" />
               <span>GitHub</span>
             </a>
           </div>
           <div class="tech-track-inner" aria-hidden="true">
             <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener" class="tech-item" tabindex="-1">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" />
               <span>HTML5</span>
             </a>
             <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" rel="noopener" class="tech-item" tabindex="-1">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" />
               <span>CSS3</span>
             </a>
             <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank" rel="noopener" class="tech-item" tabindex="-1">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
               <span>JavaScript</span>
             </a>
             <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener" class="tech-item" tabindex="-1">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" />
               <span>TypeScript</span>
             </a>
             <a href="https://react.dev/" target="_blank" rel="noopener" class="tech-item" tabindex="-1">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
               <span>React</span>
             </a>
             <a href="https://nextjs.org/" target="_blank" rel="noopener" class="tech-item" tabindex="-1">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" style="filter: invert(1) grayscale(60%) brightness(0.9);" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" style="filter: invert(1) grayscale(60%) brightness(0.9);" />
               <span>Next.js</span>
             </a>
             <a href="https://nodejs.org/" target="_blank" rel="noopener" class="tech-item" tabindex="-1">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" />
               <span>Node.js</span>
             </a>
             <a href="https://tailwindcss.com/" target="_blank" rel="noopener" class="tech-item" tabindex="-1">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" />
               <span>Tailwind</span>
             </a>
             <a href="https://git-scm.com/" target="_blank" rel="noopener" class="tech-item" tabindex="-1">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" />
               <span>Git</span>
             </a>
             <a href="https://github.com/" target="_blank" rel="noopener" class="tech-item" tabindex="-1">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" style="filter: invert(1) grayscale(60%) brightness(0.9);" />
+              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" style="filter: invert(1) grayscale(60%) brightness(0.9);" />
               <span>GitHub</span>
             </a>
           </div>
