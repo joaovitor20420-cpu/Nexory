@@ -1,586 +1,1119 @@
-﻿<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR" class="dark">
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>NEXORY | Digital Cockpits & Software Development</title>
-  
-  <!-- SEO & Meta Tags -->
-  <meta name="description" content="NEXORY: Desenvolvedora de software e aplicações web de alta performance. Entregamos soluções escaláveis, design premium e performance técnica para alavancar seu negócio." />
-  <meta property="og:title" content="NEXORY | Digital Cockpits & Software Development" />
-  <meta property="og:description" content="NEXORY: Desenvolvedora de software de alta performance. Entregamos soluções escaláveis." />
-  <meta property="og:type" content="website" />
-  <!-- A placeholder og:image, you can replace with absolute URL later -->
-  <meta property="og:image" content="images/og-image.png" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-  
-  <!-- External CSS -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body class="digital-grid">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>NEXORY | Digital Cockpits & Software Development</title>
 
-  <!-- Top Navigation -->
-  <nav class="navbar reveal">
-    <div class="nav-container">
-      <a href="#" class="logo font-headline flex-logo" aria-label="Voltar para a home">
-        <img src="images/nexory-logo.svg" alt="Nexory Logo" class="logo-img" />
-        <span>EXORY</span>
-      </a>
-      <div class="nav-links">
-        <a class="nav-link" href="#solucoes">Soluções</a>
-        <a class="nav-link" href="#especialidades">Especialidades</a>
-        <a class="nav-link" href="#como-funciona">Como Funciona</a>
-      </div>
-      <button onclick="window.open('https://wa.me/5531992692459?text=Olá, vim pelo site e quero agendar meu diagnóstico gratuito da Nexory!', '_blank')" class="btn btn-primary magnetic" aria-label="Falar pelo WhatsApp"><span class="magnetic-text">Falar pelo WhatsApp</span></button>
-    </div>
-  </nav>
+    <!-- SEO & Meta Tags -->
+    <meta
+      name="description"
+      content="NEXORY: Desenvolvedora de software e aplicações web de alta performance. Entregamos soluções escaláveis, design premium e performance técnica para alavancar seu negócio."
+    />
+    <meta
+      property="og:title"
+      content="NEXORY | Digital Cockpits & Software Development"
+    />
+    <meta
+      property="og:description"
+      content="NEXORY: Desenvolvedora de software de alta performance. Entregamos soluções escaláveis."
+    />
+    <meta property="og:type" content="website" />
+    <!-- A placeholder og:image, you can replace with absolute URL later -->
+    <meta property="og:image" content="images/og-image.png" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>"
+    />
 
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <!-- Light Leaks -->
-    <div class="light-leak-1"></div>
-    <div class="light-leak-2"></div>
-    
-    <div class="container hero-grid">
-      <div class="hero-content reveal">
-        <div class="badge">FUTURE-PROOF SOFTWARE</div>
-        <h1 class="font-headline hero-title">
-          Enquanto sua ideia não vira sistema, <span class="kinetic-gradient">você está deixando dinheiro na mesa.</span>
-        </h1>
-        <p class="hero-description">
-          Nós criamos softwares sob medida que automatizam, escalam e geram receita de forma consistente. Chega de improviso — é hora de estruturar seu crescimento.
-        </p>
-        <div class="hero-actions">
-          <button onclick="window.open('https://wa.me/5531992692459?text=Olá, quero agendar meu diagnóstico gratuito para alavancar meus projetos com a Nexory!', '_blank')" class="btn btn-primary magnetic hero-cta-btn" aria-label="Agendar diagnóstico gratuito">
-            <span class="magnetic-text">Agendar diagnóstico gratuito</span>
-          </button>
-          <div class="alert-badge">
-            ⚠️ Apenas 3 vagas abertas essa semana
-          </div>
-        </div>
-        <div>
-          <button onclick="window.open('https://wa.me/5531992692459?text=Olá, gostaria de conhecer os Case Studies e Portfólio de vocês.', '_blank')" class="btn btn-outline hover-glow magnetic" style="padding: 1rem 2rem;"><span class="magnetic-text">Ver Case Studies</span></button>
-        </div>
-      </div>
-      
-      <div class="hero-image-container reveal">
-        <div class="animate-float">
-          <img src="images/nexory-logo.svg" alt="NEXORY Interface Preview" class="hero-logo-svg" style="max-width: 480px; margin: 0 auto; display: block;" />
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Value Proposition (Bento Grid) -->
-  <section class="section-padding" id="beneficios">
-    <div class="container reveal">
-      <div class="section-title-center">
-        <p class="uppercase tracking-widest text-primary" style="font-size: 0.75rem; margin-bottom: 1rem;">POR QUE A NEXORY?</p>
-        <h2 class="font-headline">Pilares que sustentam o seu <span class="kinetic-gradient">crescimento digital.</span></h2>
-      </div>
-      <div class="bento-grid">
-        
-        <div class="glass-panel bento-item glow-card box-primary">
-          <div class="bento-item-content">
-            <div class="icon-box">
-              <span class="material-symbols-outlined text-primary" style="font-size: 1.875rem;">speed</span>
-            </div>
-            <h3 class="font-headline">Performance</h3>
-            <p>Otimização extrema para milissegundos que convertem em vendas reais.</p>
-          </div>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="digital-grid">
+    <!-- Top Navigation -->
+    <nav class="navbar reveal">
+      <div class="nav-container">
+        <a
+          href="#"
+          class="logo font-headline flex-logo"
+          aria-label="Voltar para a home"
+        >
+          <img
+            src="images/nexory-logo.svg"
+            alt="Nexory Logo"
+            class="logo-img"
+          />
+          <span>EXORY</span>
+        </a>
+        <div class="nav-links">
+          <a class="nav-link" href="#solucoes">Soluções</a>
+          <a class="nav-link" href="#especialidades">Especialidades</a>
+          <a class="nav-link" href="#como-funciona">Como Funciona</a>
         </div>
-        
-        <div class="glass-panel bento-item glow-card box-secondary">
-          <div class="bento-item-content">
-            <div class="icon-box">
-              <span class="material-symbols-outlined text-secondary" style="font-size: 1.875rem;">shield_lock</span>
-            </div>
-            <h3 class="font-headline">Segurança</h3>
-            <p>Protocolos de nível bancário em cada linha de código.</p>
-          </div>
-        </div>
-        
-        <div class="glass-panel bento-item glow-card box-tertiary">
-          <div class="bento-item-content">
-            <div class="icon-box">
-              <span class="material-symbols-outlined text-tertiary" style="font-size: 1.875rem;">trending_up</span>
-            </div>
-            <h3 class="font-headline">Escalabilidade</h3>
-            <p>Arquitetura pronta para milhões de usuários simultâneos.</p>
-          </div>
-        </div>
-        
-        <!-- Last card spans fully across next row on Desktop -->
-        <div class="glass-panel bento-item bento-large glow-card box-tertiary">
-          <div class="bento-item-content" style="max-width: 42rem;">
-            <h3 class="font-headline" style="font-size: 1.875rem;">🎯 Foco total em resultado</h3>
-            <p style="font-size: 1.125rem; font-style: italic; margin-bottom: 1rem; color: rgba(204, 195, 217, 0.7);">"Depois da Nexory, nosso sistema ficou mais rápido e começamos a escalar de verdade."</p>
-            <div class="text-primary" style="font-weight: 700; display: flex; align-items: center; gap: 0.5rem;">
-              <span class="material-symbols-outlined">trending_up</span>
-              Aumentamos em 37% a conversão de um cliente em 60 dias
-            </div>
-          </div>
-          <div class="avatars-group bento-item-content">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3uz3ggnMdwXx-dcLOZ5aLMLHnl7D9Ou_U982X6LNXfznT7boWeWbxC5sG3PqgBY2bbV6i5SdOmfFqdh8ikYy8luBzL7M0U2_VyR_xIYEjGZjUQG7G2OkWyAqqkOio5Bgvqr2iaASCLim6E0Ug-uECMGSmx6bM_OJCD9Yj5lrr9pTy5o_XwG9WcTqCBrHdi4gEsw0B1BYm8k5N6D4W_UFPgYxrCPeDezfT7XNLLaSbg-tUASyvdrgT3XADQqm1CZgxoUn0NzDy4Okx" class="avatar" alt="User" />
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQxVbYevHPlQpHHY4GEnspfH64soMLAhplg89PcFi3up-nJTITb9GQRy2joTPUhHZEdpEDANH3fGvQsXCDIAidY3moo9GVH846qkKvvxOl3EEiWBZKBsVB5tStyQhlfIpm7yudg7S2Tz16fxWgV73uwFjXtx4_KEsSdmbQz-vIr3Sk503Nco3sA_MdfYie9SLBU1tQigQl8b_CBYiLqp_fYJ2XNO6OZi75lZcTT6T45p1SlG_QT8qoo1lPOaHeObBcGre38Yk9Q-eT" class="avatar" alt="User" />
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3hoMBRpXZ6n9IOcqNFw8n9BANuFeSJWSnJed65sfXp0Zcwh75vhiRyaW03mOsweVAHJWPgX5wCV7bZfJvHxKtuhsPzNYQKtyER2meDKx7xyRWguNGOYDkRV1lS-bNl-5lnV5T1043bZNOqn8WvHNEslovrZ0n0q_gsyCYZhN-63kEd7vRxeFwMb6mBES0Ma9ePri25e4HVAlrgwWKcqxn7WS_TyNBjUZTrGuwLnOkjEYCAGieAnCpX9bxh_B4HcMmldgy7fhYU7sc" class="avatar" alt="User" />
-            <div class="avatar-count">+200</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Pain + Solution -->
-  <section class="section-padding bg-low relative" style="overflow: hidden;" id="solucoes">
-    <div class="container pain-solution-grid">
-      <div class="image-glow-wrapper reveal">
-        <div class="image-glow"></div>
-        <div class="animate-float">
-          <img class="pain-img" src="images/nexory-dashboard.svg" alt="Nexory Performance Dashboard" />
-        </div>
-      </div>
-      <div class="reveal">
-        <p class="uppercase tracking-widest text-secondary" style="font-size: 0.75rem; margin-bottom: 1rem; letter-spacing: 0.15em;">O PROBLEMA</p>
-        <h2 class="font-headline pain-title">
-          Enquanto você perde dinheiro com sistemas lentos, seus concorrentes <span class="kinetic-gradient">escalam com tecnologia.</span>
-        </h2>
-        <div class="check-list">
-          <div class="check-item">
-            <span class="material-symbols-outlined text-secondary">cancel</span>
-            <span class="text-on-surface-variant">Sistemas que travam no momento crítico.</span>
-          </div>
-          <div class="check-item">
-            <span class="material-symbols-outlined text-secondary">cancel</span>
-            <span class="text-on-surface-variant">Processos manuais que atrasam o crescimento.</span>
-          </div>
-          <div class="check-item">
-            <span class="material-symbols-outlined text-secondary">cancel</span>
-            <span class="text-on-surface-variant">Falta de integração entre ferramentas.</span>
-          </div>
-          <div class="check-item">
-            <span class="material-symbols-outlined text-secondary">cancel</span>
-            <span class="text-on-surface-variant">Custos ocultos com código mal feito.</span>
-          </div>
-        </div>
-        <hr class="divider" />
-        <p class="pain-solution-text">
-          ✦ A Nexory cria soluções inteligentes que resolvem esses gargalos na raiz.
-        </p>
-        <button onclick="window.open('https://wa.me/5531992692459?text=Olá, minha empresa tem gargalos com sistemas lentos e quero investir na solução técnica!', '_blank')" class="btn btn-primary magnetic" style="padding: 1rem 2rem; font-size: 1.125rem;"><span class="magnetic-text">Quero resolver meus gargalos agora</span></button>
-      </div>
-    </div>
-  </section>
-
-  <!-- How it Works Section -->
-  <section class="section-padding" id="como-funciona">
-    <div class="container overflow-visible">
-      <div class="section-title-center reveal">
-        <span class="section-label uppercase tracking-widest text-tertiary">PROCESSO</span>
-        <h2 class="font-headline">Como <span class="kinetic-gradient">funciona</span></h2>
-        <p class="section-subtitle">Um processo transparente focado na sua entrega final.</p>
-      </div>
-      
-      <div class="scroller-container reveal">
-        <div class="scroller-track left">
-          <!-- Bloco Original -->
-          <div class="scroller-inner">
-            <div class="glass-panel step-card">
-              <div class="step-number num-primary">01</div>
-              <div class="step-icon-box step-icon-primary">
-                <span class="material-symbols-outlined text-primary" style="font-size: 1.5rem;">chat</span>
-              </div>
-              <h4 class="font-headline">Você explica sua ideia</h4>
-              <p class="text-on-surface-variant">Mapeamos suas necessidades e objetivos de negócio detalhadamente.</p>
-            </div>
-            <div class="glass-panel step-card">
-              <div class="step-number num-secondary">02</div>
-              <div class="step-icon-box step-icon-secondary">
-                <span class="material-symbols-outlined text-secondary" style="font-size: 1.5rem;">architecture</span>
-              </div>
-              <h4 class="font-headline">Nós planejamos</h4>
-              <p class="text-on-surface-variant">Arquitetamos a melhor solução tecnológica para sua realidade.</p>
-            </div>
-            <div class="glass-panel step-card">
-              <div class="step-number num-tertiary">03</div>
-              <div class="step-icon-box step-icon-tertiary">
-                <span class="material-symbols-outlined text-tertiary" style="font-size: 1.5rem;">code</span>
-              </div>
-              <h4 class="font-headline">Desenvolvemos</h4>
-              <p class="text-on-surface-variant">Codificação com foco total em performance e escalabilidade.</p>
-            </div>
-            <div class="glass-panel step-card">
-              <div class="step-number num-primary">04</div>
-              <div class="step-icon-box step-icon-primary">
-                <span class="material-symbols-outlined text-primary" style="font-size: 1.5rem;">trending_up</span>
-              </div>
-              <h4 class="font-headline">Você escala</h4>
-              <p class="text-on-surface-variant">Lançamento do software e suporte para o crescimento do seu negócio.</p>
-            </div>
-          </div>
-          <!-- Bloco Duplicado -->
-          <div class="scroller-inner" aria-hidden="true">
-            <div class="glass-panel step-card">
-              <div class="step-number num-primary">01</div>
-              <div class="step-icon-box step-icon-primary">
-                <span class="material-symbols-outlined text-primary" style="font-size: 1.5rem;">chat</span>
-              </div>
-              <h4 class="font-headline">Você explica sua ideia</h4>
-              <p class="text-on-surface-variant">Mapeamos suas necessidades e objetivos de negócio detalhadamente.</p>
-            </div>
-            <div class="glass-panel step-card">
-              <div class="step-number num-secondary">02</div>
-              <div class="step-icon-box step-icon-secondary">
-                <span class="material-symbols-outlined text-secondary" style="font-size: 1.5rem;">architecture</span>
-              </div>
-              <h4 class="font-headline">Nós planejamos</h4>
-              <p class="text-on-surface-variant">Arquitetamos a melhor solução tecnológica para sua realidade.</p>
-            </div>
-            <div class="glass-panel step-card">
-              <div class="step-number num-tertiary">03</div>
-              <div class="step-icon-box step-icon-tertiary">
-                <span class="material-symbols-outlined text-tertiary" style="font-size: 1.5rem;">code</span>
-              </div>
-              <h4 class="font-headline">Desenvolvemos</h4>
-              <p class="text-on-surface-variant">Codificação com foco total em performance e escalabilidade.</p>
-            </div>
-            <div class="glass-panel step-card">
-              <div class="step-number num-primary">04</div>
-              <div class="step-icon-box step-icon-primary">
-                <span class="material-symbols-outlined text-primary" style="font-size: 1.5rem;">trending_up</span>
-              </div>
-              <h4 class="font-headline">Você escala</h4>
-              <p class="text-on-surface-variant">Lançamento do software e suporte para o crescimento do seu negócio.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section class="section-padding" id="especialidades">
-    <div class="container overflow-visible">
-      <div class="section-title-center reveal">
-        <span class="section-label uppercase tracking-widest text-primary">ESPECIALIDADES</span>
-        <h2 class="font-headline">Nossas <span class="kinetic-gradient">Especialidades</span></h2>
-        <p class="section-subtitle">Tecnologia de ponta para negócios que não aceitam o medíocre.</p>
-      </div>
-      
-      <div class="scroller-container reveal">
-        <div class="scroller-track right">
-          <!-- Bloco Original -->
-          <div class="scroller-inner">
-            <div class="service-card glow-card hover-primary">
-              <div class="card-bg-glow"></div>
-              <div class="service-content">
-                <div class="svc-icon-box svc-icon-primary">
-                  <span class="material-symbols-outlined text-primary" style="font-size: 1.5rem;">desktop_windows</span>
-                </div>
-                <h4 class="font-headline">Web Dev</h4>
-                <p class="text-on-surface-variant">Aplicações web modernas, ultra-velozes e otimizadas para SEO e conversão.</p>
-                <div class="service-line bg-primary-line"></div>
-              </div>
-            </div>
-            <div class="service-card glow-card hover-secondary">
-              <div class="card-bg-glow"></div>
-              <div class="service-content">
-                <div class="svc-icon-box svc-icon-secondary">
-                  <span class="material-symbols-outlined text-secondary" style="font-size: 1.5rem;">settings_suggest</span>
-                </div>
-                <h4 class="font-headline">Sistemas Custom</h4>
-                <p class="text-on-surface-variant">ERPs e CRMs desenhados especificamente para a regra de negócio da sua empresa.</p>
-                <div class="service-line bg-secondary-line"></div>
-              </div>
-            </div>
-            <div class="service-card glow-card hover-tertiary">
-              <div class="card-bg-glow"></div>
-              <div class="service-content">
-                <div class="svc-icon-box svc-icon-tertiary">
-                  <span class="material-symbols-outlined text-tertiary" style="font-size: 1.5rem;">bolt</span>
-                </div>
-                <h4 class="font-headline">Automações</h4>
-                <p class="text-on-surface-variant">Elimine tarefas repetitivas com bots e fluxos inteligentes integrados a IA.</p>
-                <div class="service-line bg-tertiary-line"></div>
-              </div>
-            </div>
-            <div class="service-card glow-card hover-primary">
-              <div class="card-bg-glow"></div>
-              <div class="service-content">
-                <div class="svc-icon-box svc-icon-primary">
-                  <span class="material-symbols-outlined text-primary" style="font-size: 1.5rem;">api</span>
-                </div>
-                <h4 class="font-headline">APIs &amp; Integração</h4>
-                <p class="text-on-surface-variant">Conectamos seu ecossistema digital de forma segura e sem gargalos de dados.</p>
-                <div class="service-line bg-primary-line"></div>
-              </div>
-            </div>
-          </div>
-          <!-- Bloco Duplicado -->
-          <div class="scroller-inner" aria-hidden="true">
-            <div class="service-card glow-card hover-primary">
-              <div class="card-bg-glow"></div>
-              <div class="service-content">
-                <div class="svc-icon-box svc-icon-primary">
-                  <span class="material-symbols-outlined text-primary" style="font-size: 1.5rem;">desktop_windows</span>
-                </div>
-                <h4 class="font-headline">Web Dev</h4>
-                <p class="text-on-surface-variant">Aplicações web modernas, ultra-velozes e otimizadas para SEO e conversão.</p>
-                <div class="service-line bg-primary-line"></div>
-              </div>
-            </div>
-            <div class="service-card glow-card hover-secondary">
-              <div class="card-bg-glow"></div>
-              <div class="service-content">
-                <div class="svc-icon-box svc-icon-secondary">
-                  <span class="material-symbols-outlined text-secondary" style="font-size: 1.5rem;">settings_suggest</span>
-                </div>
-                <h4 class="font-headline">Sistemas Custom</h4>
-                <p class="text-on-surface-variant">ERPs e CRMs desenhados especificamente para a regra de negócio da sua empresa.</p>
-                <div class="service-line bg-secondary-line"></div>
-              </div>
-            </div>
-            <div class="service-card glow-card hover-tertiary">
-              <div class="card-bg-glow"></div>
-              <div class="service-content">
-                <div class="svc-icon-box svc-icon-tertiary">
-                  <span class="material-symbols-outlined text-tertiary" style="font-size: 1.5rem;">bolt</span>
-                </div>
-                <h4 class="font-headline">Automações</h4>
-                <p class="text-on-surface-variant">Elimine tarefas repetitivas com bots e fluxos inteligentes integrados a IA.</p>
-                <div class="service-line bg-tertiary-line"></div>
-              </div>
-            </div>
-            <div class="service-card glow-card hover-primary">
-              <div class="card-bg-glow"></div>
-              <div class="service-content">
-                <div class="svc-icon-box svc-icon-primary">
-                  <span class="material-symbols-outlined text-primary" style="font-size: 1.5rem;">api</span>
-                </div>
-                <h4 class="font-headline">APIs &amp; Integração</h4>
-                <p class="text-on-surface-variant">Conectamos seu ecossistema digital de forma segura e sem gargalos de dados.</p>
-                <div class="service-line bg-primary-line"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="center-flex reveal" style="margin-top: 3rem;">
-        <button onclick="window.open('https://wa.me/5531992692459?text=Olá, quero falar com um especialista de vocês agora sobre tecnologias de ponta.', '_blank')" class="btn btn-primary magnetic" style="padding: 1.25rem 2.5rem; font-size: 1.25rem;">
-          <span class="magnetic-text">Falar com especialista agora</span>
+        <button
+          onclick="
+            window.open(
+              'https://wa.me/5531992692459?text=Olá, vim pelo site e quero agendar meu diagnóstico gratuito da Nexory!',
+              '_blank',
+            )
+          "
+          class="btn btn-primary magnetic"
+          aria-label="Falar pelo WhatsApp"
+        >
+          <span class="magnetic-text">Falar pelo WhatsApp</span>
         </button>
       </div>
-    </div>
-  </section>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <!-- Light Leaks -->
+      <div class="light-leak-1"></div>
+      <div class="light-leak-2"></div>
 
-  <!-- Differential -->
-  <section class="section-padding bg-surface-container dif-section">
-    <div class="container reveal">
-      <span class="section-label uppercase tracking-widest text-secondary" style="display: block; text-align: center;">NOSSOS NÚMEROS</span>
-      <h2 class="font-headline dif-title">Não entregamos código. Entregamos <span class="kinetic-gradient">crescimento.</span></h2>
-      <p class="dif-subtitle">Resultados reais que falam por si.</p>
-      <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-num text-tertiary">99.9%</div>
-          <div class="stat-label">Uptime Garantido</div>
-          <p>Sua plataforma sempre online, sem desculpas.</p>
-        </div>
-        <div class="stat-item">
-          <div class="stat-num text-secondary">3X</div>
-          <div class="stat-label">Mais ROI</div>
-          <p>Foco em funcionalidades que trazem dinheiro.</p>
-        </div>
-        <div class="stat-item">
-          <div class="stat-num text-primary">Zero</div>
-          <div class="stat-label">Legacy Debt</div>
-          <p>Código limpo, documentado e fácil de manter.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tech Stack -->
-  <section class="tech-stack">
-    <div class="container">
-      <p class="tech-stack-label">Tecnologias que dominamos</p>
-      <div class="tech-scroller">
-        <div class="tech-track">
-          <div class="tech-track-inner">
-            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener" class="tech-item">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" />
-              <span>HTML5</span>
-            </a>
-            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" rel="noopener" class="tech-item">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" />
-              <span>CSS3</span>
-            </a>
-            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank" rel="noopener" class="tech-item">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
-              <span>JavaScript</span>
-            </a>
-            <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener" class="tech-item">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" />
-              <span>TypeScript</span>
-            </a>
-            <a href="https://react.dev/" target="_blank" rel="noopener" class="tech-item">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
-              <span>React</span>
-            </a>
-            <a href="https://nextjs.org/" target="_blank" rel="noopener" class="tech-item">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" style="filter: invert(1) grayscale(60%) brightness(0.9);" />
-              <span>Next.js</span>
-            </a>
-            <a href="https://nodejs.org/" target="_blank" rel="noopener" class="tech-item">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" />
-              <span>Node.js</span>
-            </a>
-            <a href="https://tailwindcss.com/" target="_blank" rel="noopener" class="tech-item">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" />
-              <span>Tailwind</span>
-            </a>
-            <a href="https://git-scm.com/" target="_blank" rel="noopener" class="tech-item">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" />
-              <span>Git</span>
-            </a>
-            <a href="https://github.com/" target="_blank" rel="noopener" class="tech-item">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" style="filter: invert(1) grayscale(60%) brightness(0.9);" />
-              <span>GitHub</span>
-            </a>
-          </div>
-          <div class="tech-track-inner" aria-hidden="true">
-            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener" class="tech-item" tabindex="-1">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" />
-              <span>HTML5</span>
-            </a>
-            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" rel="noopener" class="tech-item" tabindex="-1">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" />
-              <span>CSS3</span>
-            </a>
-            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank" rel="noopener" class="tech-item" tabindex="-1">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
-              <span>JavaScript</span>
-            </a>
-            <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener" class="tech-item" tabindex="-1">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" />
-              <span>TypeScript</span>
-            </a>
-            <a href="https://react.dev/" target="_blank" rel="noopener" class="tech-item" tabindex="-1">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
-              <span>React</span>
-            </a>
-            <a href="https://nextjs.org/" target="_blank" rel="noopener" class="tech-item" tabindex="-1">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" style="filter: invert(1) grayscale(60%) brightness(0.9);" />
-              <span>Next.js</span>
-            </a>
-            <a href="https://nodejs.org/" target="_blank" rel="noopener" class="tech-item" tabindex="-1">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" />
-              <span>Node.js</span>
-            </a>
-            <a href="https://tailwindcss.com/" target="_blank" rel="noopener" class="tech-item" tabindex="-1">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" />
-              <span>Tailwind</span>
-            </a>
-            <a href="https://git-scm.com/" target="_blank" rel="noopener" class="tech-item" tabindex="-1">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" />
-              <span>Git</span>
-            </a>
-            <a href="https://github.com/" target="_blank" rel="noopener" class="tech-item" tabindex="-1">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" style="filter: invert(1) grayscale(60%) brightness(0.9);" />
-              <span>GitHub</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Final Offer -->
-  <section class="offer-section">
-    <div class="container">
-      <div class="glass-panel offer-panel reveal">
-        <div class="glow-blob blob-1"></div>
-        <div class="glow-blob blob-2"></div>
-        
-        <div class="offer-content">
-          <h2 class="font-headline offer-title">
-            Vamos tirar sua ideia do papel <span class="kinetic-gradient">ainda esta semana.</span>
-          </h2>
-          
-          <div class="alert-badge">
-            <span class="material-symbols-outlined" style="font-size: 0.875rem;">alarm</span>
-            Estamos aceitando apenas poucos projetos esse mês
-          </div>
-          
-          <div class="offer-btn-group">
-            <p>
-              Sua ideia pode ser o próximo grande software. Não deixe ela morrer no backlog. Agende um diagnóstico gratuito.
-            </p>
-            <button onclick="window.open('https://wa.me/5531992692459?text=Olá! Minha ideia não pode esperar, a hora de fechar um grande software é essa. Vamos conversar!', '_blank')" class="btn btn-primary magnetic offer-cta-btn">
-              <span class="magnetic-text" style="display: flex; align-items: center; gap: 0.5rem;">Falar com especialista agora
-              <span class="material-symbols-outlined">arrow_forward</span></span>
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="badge">FUTURE-PROOF SOFTWARE</div>
+          <h1 class="font-headline hero-title">
+            Enquanto sua ideia não vira sistema,
+            <span class="kinetic-gradient"
+              >você está deixando dinheiro na mesa.</span
+            >
+          </h1>
+          <p class="hero-description">
+            Nós criamos softwares sob medida que automatizam, escalam e geram
+            receita de forma consistente. Chega de improviso — é hora de
+            estruturar seu crescimento.
+          </p>
+          <div class="hero-actions">
+            <button
+              onclick="
+                window.open(
+                  'https://wa.me/5531992692459?text=Olá, quero agendar meu diagnóstico gratuito para alavancar meus projetos com a Nexory!',
+                  '_blank',
+                )
+              "
+              class="btn btn-primary magnetic hero-cta-btn"
+              aria-label="Agendar diagnóstico gratuito"
+            >
+              <span class="magnetic-text">Agendar diagnóstico gratuito</span>
             </button>
+            <div class="alert-badge">⚠️ Apenas 3 vagas abertas essa semana</div>
+          </div>
+          <!-- Case studies button removed -->
+        </div>
+
+        <div class="hero-image-container reveal">
+          <div class="animate-float">
+            <img
+              src="images/ChatGPT Image 31 de mar. de 2026, 22_40_54.png"
+              alt="NEXORY Interface Preview"
+              class="hero-logo-svg blink-img"
+              style="max-width: 800px; margin: 0 auto; display: block"
+            />
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer reveal">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="footer-logo font-headline">NEXORY</div>
-          <p class="footer-tagline">Arquitetando cockpits digitais que transformam ideias em produtos que escalam.</p>
-          <div class="footer-social">
-            <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
-              <span class="material-symbols-outlined" style="font-size: 1.25rem;">code</span>
-            </a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <span class="material-symbols-outlined" style="font-size: 1.25rem;">work</span>
-            </a>
-            <a href="https://wa.me/5531992692459" target="_blank" rel="noopener" aria-label="WhatsApp">
-              <span class="material-symbols-outlined" style="font-size: 1.25rem;">chat</span>
-            </a>
+    <!-- Value Proposition (Bento Grid) -->
+    <section class="section-padding" id="beneficios">
+      <div class="container reveal">
+        <div class="section-title-center">
+          <p
+            class="uppercase tracking-widest text-primary"
+            style="font-size: 0.75rem; margin-bottom: 1rem"
+          >
+            POR QUE A NEXORY?
+          </p>
+          <h2 class="font-headline">
+            Pilares que sustentam o seu
+            <span class="kinetic-gradient">crescimento digital.</span>
+          </h2>
+        </div>
+        <div class="bento-grid">
+          <div class="glass-panel bento-item glow-card box-primary">
+            <div class="bento-item-content">
+              <div class="icon-box">
+                <span
+                  class="material-symbols-outlined text-primary"
+                  style="font-size: 1.875rem"
+                  >speed</span
+                >
+              </div>
+              <h3 class="font-headline">Performance</h3>
+              <p>
+                Otimização extrema para milissegundos que convertem em vendas
+                reais.
+              </p>
+            </div>
+          </div>
+
+          <div class="glass-panel bento-item glow-card box-secondary">
+            <div class="bento-item-content">
+              <div class="icon-box">
+                <span
+                  class="material-symbols-outlined text-secondary"
+                  style="font-size: 1.875rem"
+                  >shield_lock</span
+                >
+              </div>
+              <h3 class="font-headline">Segurança</h3>
+              <p>Protocolos de nível bancário em cada linha de código.</p>
+            </div>
+          </div>
+
+          <div class="glass-panel bento-item glow-card box-tertiary">
+            <div class="bento-item-content">
+              <div class="icon-box">
+                <span
+                  class="material-symbols-outlined text-tertiary"
+                  style="font-size: 1.875rem"
+                  >trending_up</span
+                >
+              </div>
+              <h3 class="font-headline">Escalabilidade</h3>
+              <p>Arquitetura pronta para milhões de usuários simultâneos.</p>
+            </div>
+          </div>
+
+          <!-- Last card spans fully across next row on Desktop -->
+          <div
+            class="glass-panel bento-item bento-large glow-card box-tertiary"
+          >
+            <div class="bento-item-content" style="max-width: 42rem">
+              <h3 class="font-headline" style="font-size: 1.875rem">
+                🎯 Foco total em resultado
+              </h3>
+              <p
+                style="
+                  font-size: 1.125rem;
+                  font-style: italic;
+                  margin-bottom: 1rem;
+                  color: rgba(204, 195, 217, 0.7);
+                "
+              >
+                "Depois da Nexory, nosso sistema ficou mais rápido e começamos a
+                escalar de verdade."
+              </p>
+              <div
+                class="text-primary"
+                style="
+                  font-weight: 700;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                "
+              >
+                <span class="material-symbols-outlined">trending_up</span>
+                Aumentamos em 37% a conversão de um cliente em 60 dias
+              </div>
+            </div>
+            <div class="avatars-group bento-item-content">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3uz3ggnMdwXx-dcLOZ5aLMLHnl7D9Ou_U982X6LNXfznT7boWeWbxC5sG3PqgBY2bbV6i5SdOmfFqdh8ikYy8luBzL7M0U2_VyR_xIYEjGZjUQG7G2OkWyAqqkOio5Bgvqr2iaASCLim6E0Ug-uECMGSmx6bM_OJCD9Yj5lrr9pTy5o_XwG9WcTqCBrHdi4gEsw0B1BYm8k5N6D4W_UFPgYxrCPeDezfT7XNLLaSbg-tUASyvdrgT3XADQqm1CZgxoUn0NzDy4Okx"
+                class="avatar"
+                alt="User"
+              />
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQxVbYevHPlQpHHY4GEnspfH64soMLAhplg89PcFi3up-nJTITb9GQRy2joTPUhHZEdpEDANH3fGvQsXCDIAidY3moo9GVH846qkKvvxOl3EEiWBZKBsVB5tStyQhlfIpm7yudg7S2Tz16fxWgV73uwFjXtx4_KEsSdmbQz-vIr3Sk503Nco3sA_MdfYie9SLBU1tQigQl8b_CBYiLqp_fYJ2XNO6OZi75lZcTT6T45p1SlG_QT8qoo1lPOaHeObBcGre38Yk9Q-eT"
+                class="avatar"
+                alt="User"
+              />
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3hoMBRpXZ6n9IOcqNFw8n9BANuFeSJWSnJed65sfXp0Zcwh75vhiRyaW03mOsweVAHJWPgX5wCV7bZfJvHxKtuhsPzNYQKtyER2meDKx7xyRWguNGOYDkRV1lS-bNl-5lnV5T1043bZNOqn8WvHNEslovrZ0n0q_gsyCYZhN-63kEd7vRxeFwMb6mBES0Ma9ePri25e4HVAlrgwWKcqxn7WS_TyNBjUZTrGuwLnOkjEYCAGieAnCpX9bxh_B4HcMmldgy7fhYU7sc"
+                class="avatar"
+                alt="User"
+              />
+              <div class="avatar-count">+200</div>
+            </div>
           </div>
         </div>
-        <div>
-          <div class="footer-col-title">Navegação</div>
-          <nav class="footer-nav">
-            <a href="#beneficios">Benefícios</a>
-            <a href="#solucoes">Soluções</a>
-            <a href="#como-funciona">Como Funciona</a>
-            <a href="#especialidades">Especialidades</a>
-          </nav>
+      </div>
+    </section>
+
+    <!-- Pain + Solution -->
+    <section
+      class="section-padding bg-low relative"
+      style="overflow: hidden"
+      id="solucoes"
+    >
+      <div class="container pain-solution-grid">
+        <div class="image-glow-wrapper reveal">
+          <div class="image-glow"></div>
+          <div class="animate-float">
+            <img
+              class="pain-img"
+              src="images/nexory-dashboard.svg"
+              alt="Nexory Performance Dashboard"
+            />
+          </div>
         </div>
-        <div>
-          <div class="footer-col-title">Legal</div>
-          <nav class="footer-nav">
-            <a href="#">Política de Privacidade</a>
-            <a href="#">Termos de Serviço</a>
-            <a href="#">Cookies</a>
-          </nav>
+        <div class="reveal">
+          <p
+            class="uppercase tracking-widest text-secondary"
+            style="
+              font-size: 0.75rem;
+              margin-bottom: 1rem;
+              letter-spacing: 0.15em;
+            "
+          >
+            O PROBLEMA
+          </p>
+          <h2 class="font-headline pain-title">
+            Enquanto você perde dinheiro com sistemas lentos, seus concorrentes
+            <span class="kinetic-gradient">escalam com tecnologia.</span>
+          </h2>
+          <div class="check-list">
+            <div class="check-item">
+              <span class="material-symbols-outlined text-secondary"
+                >cancel</span
+              >
+              <span class="text-on-surface-variant"
+                >Sistemas que travam no momento crítico.</span
+              >
+            </div>
+            <div class="check-item">
+              <span class="material-symbols-outlined text-secondary"
+                >cancel</span
+              >
+              <span class="text-on-surface-variant"
+                >Processos manuais que atrasam o crescimento.</span
+              >
+            </div>
+            <div class="check-item">
+              <span class="material-symbols-outlined text-secondary"
+                >cancel</span
+              >
+              <span class="text-on-surface-variant"
+                >Falta de integração entre ferramentas.</span
+              >
+            </div>
+            <div class="check-item">
+              <span class="material-symbols-outlined text-secondary"
+                >cancel</span
+              >
+              <span class="text-on-surface-variant"
+                >Custos ocultos com código mal feito.</span
+              >
+            </div>
+          </div>
+          <hr class="divider" />
+          <p class="pain-solution-text">
+            ✦ A Nexory cria soluções inteligentes que resolvem esses gargalos na
+            raiz.
+          </p>
+          <button
+            onclick="
+              window.open(
+                'https://wa.me/5531992692459?text=Olá, minha empresa tem gargalos com sistemas lentos e quero investir na solução técnica!',
+                '_blank',
+              )
+            "
+            class="btn btn-primary magnetic"
+            style="padding: 1rem 2rem; font-size: 1.125rem"
+          >
+            <span class="magnetic-text"
+              >Quero resolver meus gargalos agora</span
+            >
+          </button>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span>© 2024 NEXORY. Todos os direitos reservados.</span>
-        <span>Feito com 💜 e código limpo.</span>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="section-padding" id="como-funciona">
+      <div class="container overflow-visible">
+        <div class="section-title-center reveal">
+          <span class="section-label uppercase tracking-widest text-tertiary"
+            >PROCESSO</span
+          >
+          <h2 class="font-headline">
+            Como <span class="kinetic-gradient">funciona</span>
+          </h2>
+          <p class="section-subtitle">
+            Um processo transparente focado na sua entrega final.
+          </p>
+        </div>
+
+        <div class="scroller-container reveal">
+          <div class="scroller-track left">
+            <!-- Bloco Original -->
+            <div class="scroller-inner">
+              <div class="glass-panel step-card">
+                <div class="step-number num-primary">01</div>
+                <div class="step-icon-box step-icon-primary">
+                  <span
+                    class="material-symbols-outlined text-primary"
+                    style="font-size: 1.5rem"
+                    >chat</span
+                  >
+                </div>
+                <h4 class="font-headline">Você explica sua ideia</h4>
+                <p class="text-on-surface-variant">
+                  Mapeamos suas necessidades e objetivos de negócio
+                  detalhadamente.
+                </p>
+              </div>
+              <div class="glass-panel step-card">
+                <div class="step-number num-secondary">02</div>
+                <div class="step-icon-box step-icon-secondary">
+                  <span
+                    class="material-symbols-outlined text-secondary"
+                    style="font-size: 1.5rem"
+                    >architecture</span
+                  >
+                </div>
+                <h4 class="font-headline">Nós planejamos</h4>
+                <p class="text-on-surface-variant">
+                  Arquitetamos a melhor solução tecnológica para sua realidade.
+                </p>
+              </div>
+              <div class="glass-panel step-card">
+                <div class="step-number num-tertiary">03</div>
+                <div class="step-icon-box step-icon-tertiary">
+                  <span
+                    class="material-symbols-outlined text-tertiary"
+                    style="font-size: 1.5rem"
+                    >code</span
+                  >
+                </div>
+                <h4 class="font-headline">Desenvolvemos</h4>
+                <p class="text-on-surface-variant">
+                  Codificação com foco total em performance e escalabilidade.
+                </p>
+              </div>
+              <div class="glass-panel step-card">
+                <div class="step-number num-primary">04</div>
+                <div class="step-icon-box step-icon-primary">
+                  <span
+                    class="material-symbols-outlined text-primary"
+                    style="font-size: 1.5rem"
+                    >trending_up</span
+                  >
+                </div>
+                <h4 class="font-headline">Você escala</h4>
+                <p class="text-on-surface-variant">
+                  Lançamento do software e suporte para o crescimento do seu
+                  negócio.
+                </p>
+              </div>
+            </div>
+            <!-- Bloco Duplicado -->
+            <div class="scroller-inner" aria-hidden="true">
+              <div class="glass-panel step-card">
+                <div class="step-number num-primary">01</div>
+                <div class="step-icon-box step-icon-primary">
+                  <span
+                    class="material-symbols-outlined text-primary"
+                    style="font-size: 1.5rem"
+                    >chat</span
+                  >
+                </div>
+                <h4 class="font-headline">Você explica sua ideia</h4>
+                <p class="text-on-surface-variant">
+                  Mapeamos suas necessidades e objetivos de negócio
+                  detalhadamente.
+                </p>
+              </div>
+              <div class="glass-panel step-card">
+                <div class="step-number num-secondary">02</div>
+                <div class="step-icon-box step-icon-secondary">
+                  <span
+                    class="material-symbols-outlined text-secondary"
+                    style="font-size: 1.5rem"
+                    >architecture</span
+                  >
+                </div>
+                <h4 class="font-headline">Nós planejamos</h4>
+                <p class="text-on-surface-variant">
+                  Arquitetamos a melhor solução tecnológica para sua realidade.
+                </p>
+              </div>
+              <div class="glass-panel step-card">
+                <div class="step-number num-tertiary">03</div>
+                <div class="step-icon-box step-icon-tertiary">
+                  <span
+                    class="material-symbols-outlined text-tertiary"
+                    style="font-size: 1.5rem"
+                    >code</span
+                  >
+                </div>
+                <h4 class="font-headline">Desenvolvemos</h4>
+                <p class="text-on-surface-variant">
+                  Codificação com foco total em performance e escalabilidade.
+                </p>
+              </div>
+              <div class="glass-panel step-card">
+                <div class="step-number num-primary">04</div>
+                <div class="step-icon-box step-icon-primary">
+                  <span
+                    class="material-symbols-outlined text-primary"
+                    style="font-size: 1.5rem"
+                    >trending_up</span
+                  >
+                </div>
+                <h4 class="font-headline">Você escala</h4>
+                <p class="text-on-surface-variant">
+                  Lançamento do software e suporte para o crescimento do seu
+                  negócio.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <!-- Custom Cursor -->
-  <div id="cursor"></div>
+    <!-- Services -->
+    <section class="section-padding" id="especialidades">
+      <div class="container overflow-visible">
+        <div class="section-title-center reveal">
+          <span class="section-label uppercase tracking-widest text-primary"
+            >ESPECIALIDADES</span
+          >
+          <h2 class="font-headline">
+            Nossas <span class="kinetic-gradient">Especialidades</span>
+          </h2>
+          <p class="section-subtitle">
+            Tecnologia de ponta para negócios que não aceitam o medíocre.
+          </p>
+        </div>
 
-</body>
-<script src="script.js" defer></script>
+        <div class="scroller-container reveal">
+          <div class="scroller-track right">
+            <!-- Bloco Original -->
+            <div class="scroller-inner">
+              <div class="service-card glow-card hover-primary">
+                <div class="card-bg-glow"></div>
+                <div class="service-content">
+                  <div class="svc-icon-box svc-icon-primary">
+                    <span
+                      class="material-symbols-outlined text-primary"
+                      style="font-size: 1.5rem"
+                      >desktop_windows</span
+                    >
+                  </div>
+                  <h4 class="font-headline">Web Dev</h4>
+                  <p class="text-on-surface-variant">
+                    Aplicações web modernas, ultra-velozes e otimizadas para SEO
+                    e conversão.
+                  </p>
+                  <div class="service-line bg-primary-line"></div>
+                </div>
+              </div>
+              <div class="service-card glow-card hover-secondary">
+                <div class="card-bg-glow"></div>
+                <div class="service-content">
+                  <div class="svc-icon-box svc-icon-secondary">
+                    <span
+                      class="material-symbols-outlined text-secondary"
+                      style="font-size: 1.5rem"
+                      >settings_suggest</span
+                    >
+                  </div>
+                  <h4 class="font-headline">Sistemas Custom</h4>
+                  <p class="text-on-surface-variant">
+                    ERPs e CRMs desenhados especificamente para a regra de
+                    negócio da sua empresa.
+                  </p>
+                  <div class="service-line bg-secondary-line"></div>
+                </div>
+              </div>
+              <div class="service-card glow-card hover-tertiary">
+                <div class="card-bg-glow"></div>
+                <div class="service-content">
+                  <div class="svc-icon-box svc-icon-tertiary">
+                    <span
+                      class="material-symbols-outlined text-tertiary"
+                      style="font-size: 1.5rem"
+                      >bolt</span
+                    >
+                  </div>
+                  <h4 class="font-headline">Automações</h4>
+                  <p class="text-on-surface-variant">
+                    Elimine tarefas repetitivas com bots e fluxos inteligentes
+                    integrados a IA.
+                  </p>
+                  <div class="service-line bg-tertiary-line"></div>
+                </div>
+              </div>
+              <div class="service-card glow-card hover-primary">
+                <div class="card-bg-glow"></div>
+                <div class="service-content">
+                  <div class="svc-icon-box svc-icon-primary">
+                    <span
+                      class="material-symbols-outlined text-primary"
+                      style="font-size: 1.5rem"
+                      >api</span
+                    >
+                  </div>
+                  <h4 class="font-headline">APIs &amp; Integração</h4>
+                  <p class="text-on-surface-variant">
+                    Conectamos seu ecossistema digital de forma segura e sem
+                    gargalos de dados.
+                  </p>
+                  <div class="service-line bg-primary-line"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Bloco Duplicado -->
+            <div class="scroller-inner" aria-hidden="true">
+              <div class="service-card glow-card hover-primary">
+                <div class="card-bg-glow"></div>
+                <div class="service-content">
+                  <div class="svc-icon-box svc-icon-primary">
+                    <span
+                      class="material-symbols-outlined text-primary"
+                      style="font-size: 1.5rem"
+                      >desktop_windows</span
+                    >
+                  </div>
+                  <h4 class="font-headline">Web Dev</h4>
+                  <p class="text-on-surface-variant">
+                    Aplicações web modernas, ultra-velozes e otimizadas para SEO
+                    e conversão.
+                  </p>
+                  <div class="service-line bg-primary-line"></div>
+                </div>
+              </div>
+              <div class="service-card glow-card hover-secondary">
+                <div class="card-bg-glow"></div>
+                <div class="service-content">
+                  <div class="svc-icon-box svc-icon-secondary">
+                    <span
+                      class="material-symbols-outlined text-secondary"
+                      style="font-size: 1.5rem"
+                      >settings_suggest</span
+                    >
+                  </div>
+                  <h4 class="font-headline">Sistemas Custom</h4>
+                  <p class="text-on-surface-variant">
+                    ERPs e CRMs desenhados especificamente para a regra de
+                    negócio da sua empresa.
+                  </p>
+                  <div class="service-line bg-secondary-line"></div>
+                </div>
+              </div>
+              <div class="service-card glow-card hover-tertiary">
+                <div class="card-bg-glow"></div>
+                <div class="service-content">
+                  <div class="svc-icon-box svc-icon-tertiary">
+                    <span
+                      class="material-symbols-outlined text-tertiary"
+                      style="font-size: 1.5rem"
+                      >bolt</span
+                    >
+                  </div>
+                  <h4 class="font-headline">Automações</h4>
+                  <p class="text-on-surface-variant">
+                    Elimine tarefas repetitivas com bots e fluxos inteligentes
+                    integrados a IA.
+                  </p>
+                  <div class="service-line bg-tertiary-line"></div>
+                </div>
+              </div>
+              <div class="service-card glow-card hover-primary">
+                <div class="card-bg-glow"></div>
+                <div class="service-content">
+                  <div class="svc-icon-box svc-icon-primary">
+                    <span
+                      class="material-symbols-outlined text-primary"
+                      style="font-size: 1.5rem"
+                      >api</span
+                    >
+                  </div>
+                  <h4 class="font-headline">APIs &amp; Integração</h4>
+                  <p class="text-on-surface-variant">
+                    Conectamos seu ecossistema digital de forma segura e sem
+                    gargalos de dados.
+                  </p>
+                  <div class="service-line bg-primary-line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="center-flex reveal" style="margin-top: 3rem">
+          <button
+            onclick="
+              window.open(
+                'https://wa.me/5531992692459?text=Olá, quero falar com um especialista de vocês agora sobre tecnologias de ponta.',
+                '_blank',
+              )
+            "
+            class="btn btn-primary magnetic"
+            style="padding: 1.25rem 2.5rem; font-size: 1.25rem"
+          >
+            <span class="magnetic-text">Falar com especialista agora</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Differential -->
+    <section class="section-padding bg-surface-container dif-section">
+      <div class="container reveal">
+        <span
+          class="section-label uppercase tracking-widest text-secondary"
+          style="display: block; text-align: center"
+          >NOSSOS NÚMEROS</span
+        >
+        <h2 class="font-headline dif-title">
+          Não entregamos código. Entregamos
+          <span class="kinetic-gradient">crescimento.</span>
+        </h2>
+        <p class="dif-subtitle">Resultados reais que falam por si.</p>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-num text-tertiary">99.9%</div>
+            <div class="stat-label">Uptime Garantido</div>
+            <p>Sua plataforma sempre online, sem desculpas.</p>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num text-secondary">3X</div>
+            <div class="stat-label">Mais ROI</div>
+            <p>Foco em funcionalidades que trazem dinheiro.</p>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num text-primary">Zero</div>
+            <div class="stat-label">Legacy Debt</div>
+            <p>Código limpo, documentado e fácil de manter.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="tech-stack">
+      <div class="container">
+        <p class="tech-stack-label">Tecnologias que dominamos</p>
+        <div class="tech-scroller">
+          <div class="tech-track">
+            <div class="tech-track-inner">
+              <a
+                href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+                target="_blank"
+                rel="noopener"
+                class="tech-item"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                  alt="HTML5"
+                />
+                <span>HTML5</span>
+              </a>
+              <a
+                href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+                target="_blank"
+                rel="noopener"
+                class="tech-item"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                  alt="CSS3"
+                />
+                <span>CSS3</span>
+              </a>
+              <a
+                href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+                target="_blank"
+                rel="noopener"
+                class="tech-item"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"
+                />
+                <span>JavaScript</span>
+              </a>
+              <a
+                href="https://www.typescriptlang.org/"
+                target="_blank"
+                rel="noopener"
+                class="tech-item"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                  alt="TypeScript"
+                />
+                <span>TypeScript</span>
+              </a>
+              <a
+                href="https://react.dev/"
+                target="_blank"
+                rel="noopener"
+                class="tech-item"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                  alt="React"
+                />
+                <span>React</span>
+              </a>
+              <a
+                href="https://nextjs.org/"
+                target="_blank"
+                rel="noopener"
+                class="tech-item"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+                  alt="Next.js"
+                  style="filter: invert(1) grayscale(60%) brightness(0.9)"
+                />
+                <span>Next.js</span>
+              </a>
+              <a
+                href="https://nodejs.org/"
+                target="_blank"
+                rel="noopener"
+                class="tech-item"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                  alt="Node.js"
+                />
+                <span>Node.js</span>
+              </a>
+              <a
+                href="https://tailwindcss.com/"
+                target="_blank"
+                rel="noopener"
+                class="tech-item"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                  alt="Tailwind CSS"
+                />
+                <span>Tailwind</span>
+              </a>
+              <a
+                href="https://git-scm.com/"
+                target="_blank"
+                rel="noopener"
+                class="tech-item"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                  alt="Git"
+                />
+                <span>Git</span>
+              </a>
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener"
+                class="tech-item"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                  alt="GitHub"
+                  style="filter: invert(1) grayscale(60%) brightness(0.9)"
+                />
+                <span>GitHub</span>
+              </a>
+            </div>
+            <div class="tech-track-inner" aria-hidden="true">
+              <a
+                href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+                target="_blank"
+                rel="noopener"
+                class="tech-item"
+                tabindex="-1"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                  alt="HTML5"
+                />
+                <span>HTML5</span>
+              </a>
+              <a
+                href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+                target="_blank"
+                rel="noopener"
+                class="tech-item"
+                tabindex="-1"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                  alt="CSS3"
+                />
+                <span>CSS3</span>
+              </a>
+              <a
+                href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+                target="_blank"
+                rel="noopener"
+                class="tech-item"
+                tabindex="-1"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"
+                />
+                <span>JavaScript</span>
+              </a>
+              <a
+                href="https://www.typescriptlang.org/"
+                target="_blank"
+                rel="noopener"
+                class="tech-item"
+                tabindex="-1"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                  alt="TypeScript"
+                />
+                <span>TypeScript</span>
+              </a>
+              <a
+                href="https://react.dev/"
+                target="_blank"
+                rel="noopener"
+                class="tech-item"
+                tabindex="-1"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                  alt="React"
+                />
+                <span>React</span>
+              </a>
+              <a
+                href="https://nextjs.org/"
+                target="_blank"
+                rel="noopener"
+                class="tech-item"
+                tabindex="-1"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+                  alt="Next.js"
+                  style="filter: invert(1) grayscale(60%) brightness(0.9)"
+                />
+                <span>Next.js</span>
+              </a>
+              <a
+                href="https://nodejs.org/"
+                target="_blank"
+                rel="noopener"
+                class="tech-item"
+                tabindex="-1"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                  alt="Node.js"
+                />
+                <span>Node.js</span>
+              </a>
+              <a
+                href="https://tailwindcss.com/"
+                target="_blank"
+                rel="noopener"
+                class="tech-item"
+                tabindex="-1"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                  alt="Tailwind CSS"
+                />
+                <span>Tailwind</span>
+              </a>
+              <a
+                href="https://git-scm.com/"
+                target="_blank"
+                rel="noopener"
+                class="tech-item"
+                tabindex="-1"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                  alt="Git"
+                />
+                <span>Git</span>
+              </a>
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener"
+                class="tech-item"
+                tabindex="-1"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                  alt="GitHub"
+                  style="filter: invert(1) grayscale(60%) brightness(0.9)"
+                />
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Offer -->
+    <section class="offer-section">
+      <div class="container">
+        <div class="glass-panel offer-panel reveal">
+          <div class="glow-blob blob-1"></div>
+          <div class="glow-blob blob-2"></div>
+
+          <div class="offer-content">
+            <h2 class="font-headline offer-title">
+              Vamos tirar sua ideia do papel
+              <span class="kinetic-gradient">ainda esta semana.</span>
+            </h2>
+
+            <div class="alert-badge">
+              <span
+                class="material-symbols-outlined"
+                style="font-size: 0.875rem"
+                >alarm</span
+              >
+              Estamos aceitando apenas poucos projetos esse mês
+            </div>
+
+            <div class="offer-btn-group">
+              <p>
+                Sua ideia pode ser o próximo grande software. Não deixe ela
+                morrer no backlog. Agende um diagnóstico gratuito.
+              </p>
+              <button
+                onclick="
+                  window.open(
+                    'https://wa.me/5531992692459?text=Olá! Minha ideia não pode esperar, a hora de fechar um grande software é essa. Vamos conversar!',
+                    '_blank',
+                  )
+                "
+                class="btn btn-primary magnetic offer-cta-btn"
+              >
+                <span
+                  class="magnetic-text"
+                  style="display: flex; align-items: center; gap: 0.5rem"
+                  >Falar com especialista agora
+                  <span class="material-symbols-outlined"
+                    >arrow_forward</span
+                  ></span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer reveal">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo font-headline">NEXORY</div>
+            <p class="footer-tagline">
+              Arquitetando cockpits digitais que transformam ideias em produtos
+              que escalam.
+            </p>
+            <div class="footer-social">
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-size: 1.25rem"
+                  >code</span
+                >
+              </a>
+              <a
+                href="https://linkedin.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-size: 1.25rem"
+                  >work</span
+                >
+              </a>
+              <a
+                href="https://wa.me/5531992692459"
+                target="_blank"
+                rel="noopener"
+                aria-label="WhatsApp"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-size: 1.25rem"
+                  >chat</span
+                >
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-col-title">Navegação</div>
+            <nav class="footer-nav">
+              <a href="#beneficios">Benefícios</a>
+              <a href="#solucoes">Soluções</a>
+              <a href="#como-funciona">Como Funciona</a>
+              <a href="#especialidades">Especialidades</a>
+            </nav>
+          </div>
+          <div>
+            <div class="footer-col-title">Legal</div>
+            <nav class="footer-nav">
+              <a href="#">Política de Privacidade</a>
+              <a href="#">Termos de Serviço</a>
+              <a href="#">Cookies</a>
+            </nav>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2024 NEXORY. Todos os direitos reservados.</span>
+          <span>Feito com 💜 e código limpo.</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+  </body>
+  <script src="script.js" defer></script>
 </html>
